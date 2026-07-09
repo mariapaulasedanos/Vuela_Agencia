@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial/scale=1" />
+  <title>Agencia de Viajes</title>
+  <meta name="description" content="Vuela agencia de viajes y turismo: descubre un nuevo mundo con nosotros. Experiencias únicas, destinos increíbles y recuerdos inolvidables." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.CSS">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="script.js"></script>
+</head>
+<body>
+      <header class="transparent" id="siteHeader">
+      <div class="nav-container">
+        <div class="brand">
+          <img src="./images/images.png" alt="Logo vuela" />
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#destinos">Destino</a></li>
+            <li><a href="#Referencias">Nuestros viajeros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="cta">VUELA CON NOSOTROS</a>
+      </div>
+    </header>
+
+  <!-- ✅ VIDEO + NAVBAR + HERO (solo hasta aquí llega el video) -->
+  <div class="top-cover">
+
+    <!-- Video de fondo (una sola vez) -->
+    <video class="bg-video" autoplay muted loop playsinline
+           poster="assets/hero-poster.jpg" aria-hidden="true">
+      <source src="./images/VIDEO PAGWEB.mp4" type="video/mp4">
+      <source src="assets/hero-vuela.webm" type="video/webm">
+    </video>
+
+    <!-- Capa oscura para que el texto se lea -->
+    <div class="bg-overlay"></div>
+
+    <section class="hero" id="Inicio">
+      <div class="hero-content">
+        <h1>Vuela</h1>
+        <h1 class="subtitle">Agencia de Viajes y Turismo</h1>
+        <h2>Descubre un nuevo mundo con nosotros</h2>
+        <p>Convertimos tus sueños de viaje en realidad. Experiencias únicas, destinos increíbles y recuerdos inolvidables te esperan</p>
+
+        <a href="#destinos" class="exp">Explorar Destinos</a>
+        <a href="#destinos" class="Paquetes">Ver Paquetes</a>
+      </div>
+    </section>
+
+  </div>
+
+    <section class="stats">
+        <div class="Stats-container">
+                  <!-- Tarjeta 1 -->
+            <article class="statcard">
+                <div class="statcard__icon" aria-hidden="true">
+                <!-- Pin / ubicación -->
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none">
+                        <path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z" stroke="currentColor" stroke-width="1.8"/>
+                        <circle cx="12" cy="10" r="2.8" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="statcard__value">Armenia, Quindío</div>
+            </article>
+    
+            <!-- Tarjeta 2 -->
+            <article class="statcard">
+                <div class="statcard__icon" aria-hidden="true">
+                <!-- Grupo de personas -->
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none">
+                    <path d="M7 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm10 0a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" stroke="currentColor" stroke-width="1.8" />
+                    <path d="M2.5 20c.4-3.2 3.7-5 7.5-5s7.1 1.8 7.5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+                </div>
+                <div class="statcard__value">1,000+</div>
+                <div class="statcard__label">Clientes Felices</div>
+            </article>
+
+            <!-- Tarjeta 3 -->
+            <article class="statcard">
+                <div class="statcard__icon" aria-hidden="true">
+                <!-- Calendario -->
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none">
+                    <rect x="3" y="4" width="18" height="17" rx="3" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M3 9h18" stroke="currentColor" stroke-width="1.8" />
+                    <path d="M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+                </div>
+                <div class="statcard__value">10</div>
+                <div class="statcard__label">Años de Experiencia</div>
+            </article>
+        </div>   
+    </section>
+
+    <section id="servicios" class="services">
+        <div class="services__container">
+            <header class="services__head">
+                <h2>Nuestros Servicios</h2>
+                <p>Ofrecemos una gama completa de servicios de viaje para hacer de tu experiencia algo extraordinario</p>
+            </header>
+
+            <div class="services__grid">
+            <!-- 1. Vuelos -->
+                <article class="svc-card">
+                  <div class="svc-card__media">
+                    <img src="./images/avion vuelos.png" alt="Vuelos">
+                  </div>
+                    <!-- avión -->
+                  <div class="svc-card__body">
+                    <div class="svc-card__badge icon--blue" aria-hidden="true">
+                      <img src="./images/logo vuelos.png" alt="Vuelos">
+                    </div>
+                    <h3>Vuelos</h3>
+                    <p>Encuentra los mejores precios en vuelos nacionales e internacionales con las mejores aerolíneas.</p>
+                  </div>
+                  </article>
+
+                <!-- 2. Hoteles -->
+                <article class="svc-card">
+                    <div class="svc-card__media">
+                      <img src="./images/hotel.jpeg" alt="Hoteles" loading="lazy">
+                    </div>
+                    <!-- hotel -->
+                    <div class="svc-card__body">
+                      <div class="svc-card__badge icon--purple" aria-hidden="true">
+                        <img src="./images/logo hotel.png" alt="Hoteles">
+                      </div>
+                    <h3>Hoteles</h3>
+                    <p>Reserva hoteles de lujo y económicos en los destinos más populares del mundo.</p>
+                    </div>
+                </article>
+
+                <!-- 3. Paquetes Turísticos -->
+                <article class="svc-card">
+                      <div class="svc-card__media">
+                        <img src="./images/paquetes turisticos.jpg" alt="Paquetes Turísticos" loading="lazy">
+                      </div>
+                      <div class="svc-card__body">
+                        <div class="svc-card__badge icon--green" aria-hidden="true">
+                          <img src="./images/logo paquetes turisticos.png" alt="paquetes">
+                        </div>
+                        <h3>Paquetes Turísticos</h3>
+                        <p>Paquetes completos que incluyen vuelo, hotel y actividades para una experiencia inolvidable.</p>
+                      </div>
+                </article>
+
+                <!-- 4. Tours Guiados -->
+                <article class="svc-card">
+                  <div class="svc-card__media">
+                    <img src="./images/TOURS GUIADOS.jpg" alt="Tours Guiados" loading="lazy">
+                  </div>
+                  <div class="svc-card__body">
+                    <div class="svc-card__badge icon--orange" aria-hidden="true">
+                      <img src="./images/logo tours guiados.png" alt="Guiados">
+                    </div>
+                    <h3>Tours Guiados</h3>
+                    <p>Descubre la cultura local con nuestros tours guiados por expertos en cada destino.</p>
+                  </div>
+                </article>
+
+                <!-- 5. Renta de Autos -->
+                <article class="svc-card">
+                  <div class="svc-card__media">
+                    <img src="./images/RENTA DE AUTOS.png" alt="Renta de Autos" loading="lazy">
+                  </div>
+                  <div class="svc-card__body">
+                    <div class="svc-card__badge icon--indigo" aria-hidden="true">
+                      <img src="./images/logo alquiler  de auto.png" alt="ALquiler-autos">
+                    </div>
+                    <h3>Renta de Autos</h3>
+                    <p>Alquila vehículos cómodos y seguros para explorar tu destino con total libertad.</p>
+                  </div>
+                </article>
+
+                <!-- 6. Cruceros -->
+                <article class="svc-card">
+                  <div class="svc-card__media">
+                    <img src="./images/CRUCERO.jpg" alt="Cruceros" loading="lazy">
+                  </div>
+                  <div class="svc-card__body">
+                    <div class="svc-card__badge icon--teal" aria-hidden="true">
+                      <img src="./images/logo cruceros.png" alt="Cruceros">
+                    </div>
+                    <h3>Cruceros</h3>
+                    <p>Vive la experiencia única de un crucero con entretenimiento, gastronomía y destinos múltiples.</p>
+                  </div>
+                </article>
+            </div>
+          </div>
+    </section>
+
+    <section id="destinos" class="popular">
+  <div class="destinations_container">
+    <header class="destinations_head">
+      <span class="destinations_eyebrow"> DESTINOS EXCLUSIVOS</span>
+      <h2>EXPLORA NUESTROS PAQUETES</h2>
+      <p>Explora los destinos más increíbles del mundo con nuestros paquetes especialmente diseñados para todo tipo de viajero</p>
+    </header>
+
+    <div class="destinations_grid">
+
+      <!-- Card 1 -->
+      <article class="destinations-card">
+        <div class="destinations-card__media">
+          <img src="./images/EUROPA.jpg" alt="París, Francia" loading="lazy">
+          <span class="destcard__rating" aria-label="Calificación 4.9">★ 4.9</span>
+          <span class="destinations-card__tag">Premium</span>
+        </div>
+          
+        <div class="destinations-card__overlay">
+          <div class="destinations-card__content">
+            <span class="destinations-card__place">Europa</span>
+            <h3>Europa Soñada</h3>
+            <p>Vuelo + hotel + city tour + experiencias culturales seleccionadas.</p>
+            <div class="destinations-card__bottom">
+              <span class="destinations-card__price">Desde $8'999.000 cop</span>
+              <a href="#contacto" class="destinations-card__btn">Ver Paquete</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Card 2 -->
+    <article class="destinations-card">
+        <div class="destinations-card__media">
+          <img src="./images/tokio.jpg" alt="Tokio, Japón" loading="lazy">
+          <span class="destinations-card__tag">Exclusivo</span>
+        </div>
+        <div class="destinations-card__overlay">
+          <div class="destinations-card__content">
+            <span class="destinations-card__place">Tokio, Japón</span>
+            <h3>Tradición & Modernidad</h3>
+            <p>La fusión perfecta entre templos, tecnología y experiencias únicas.</p>
+            <div class="destinations-card__bottom">
+              <span class="destinations-card__price">Desde $21'990.000 cop</span>
+              <a href="#contacto" class="destinations-card__btn">Ver Paquete</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="destinations-card">
+        <div class="destinations-card__media">
+          <img src="./images/santorini.jpg" alt="Santorini, Grecia" loading="lazy">
+          <span class="destinations-card__tag">Popular</span>
+        </div>
+        <div class="destinations-card__overlay">
+          <div class="destinations-card__content">
+            <span class="destinations-card__place">Santorini, Grecia</span>
+            <h3>Escapada Mediterránea</h3>
+            <p>Atardeceres inolvidables, arquitectura icónica y vistas al mar.</p>
+            <div class="destinations-card__bottom">
+              <span class="destinations-card__price">Desde $9'900.000 cop</span>
+              <a href="#contacto" class="destinations-card__btn">Ver Paquete</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="destinations-card">
+        <div class="destinations-card__media">
+          <img src="./images/peru.jpg" alt="Machu Picchu, Perú" loading="lazy">
+          <span class="destinations-card__tag">Aventura</span>
+        </div>
+        <div class="destinations-card__overlay">
+          <div class="destinations-card__content">
+            <span class="destinations-card__place">Machu Picchu, Perú</span>
+            <h3>Historia Viva</h3>
+            <p>Explora la ciudadela Inca y vive una experiencia inolvidable en los Andes.</p>
+            <div class="destinations-card__bottom">
+              <span class="destinations-card__price">Desde $4'500.000 cop</span>
+              <a href="#contacto" class="destinations-card__btn">Ver Paquete</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+            <article class="destinations-card">
+        <div class="destinations-card__media">
+          <img src="./images/bali.jpeg" alt="Bali, Indonesia" loading="lazy">
+          <span class="destinations-card__tag">Relax</span>
+        </div>
+        <div class="destinations-card__overlay">
+          <div class="destinations-card__content">
+            <span class="destinations-card__place">Bali, Indonesia</span>
+            <h3>Paraíso Tropical</h3>
+            <p>Playas, templos y naturaleza en una escapada ideal para desconectar.</p>
+            <div class="destinations-card__bottom">
+              <span class="destinations-card__price">Desde $16'800.000 cop</span>
+              <a href="#contacto" class="destinations-card__btn">Ver Paquete</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Card 6 -->
+      <article class="destinations-card">
+        <div class="destinations-card__media">
+          <img src="./images/New york.jpg" alt="Nueva York, EUA" loading="lazy">
+          <span class="destinations-card__tag">City Break</span>
+        </div>
+        <div class="destinations-card__overlay">
+          <div class="destinations-card__content">
+            <span class="destinations-card__place">Nueva York, EUA</span>
+            <h3>La Ciudad que Nunca Duerme</h3>
+            <p>Broadway, Central Park y el ritmo único de una metrópoli icónica.</p>
+            <div class="destinations-card__bottom">
+              <span class="destinations-card__price">Desde $4'900.000 cop</span>
+              <a href="#contacto" class="destinations-card__btn">Ver Paquete</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="popular__cta">
+      <a class="btn-all" href="#destinos">Ver Todos los Destinos</a>
+    </div>
+  </div>
+    </section>
+
+<!----------- Referencias de clientes ------->
+<section id="Referencias" class="Referencias">
+  <div class="Referencias_container">
+
+    <header class="Referencias__head">
+      <h2>NUESTROS VIAJEROS</h2>
+      <p>Experiencias reales de nuestros clientes</p>
+    </header>
+
+    <div class="Referencias__grid">
+
+      <!-- Referencia 1 -->
+      <article class="Referencias_clientes">
+        <div class="Referencias__media">
+          <img src="./images/rosita.png" alt="Rosita">
+        </div>
+        <h3>ROSITA Y SU FAMILIA </h3>
+        <div class="Referencias__location">
+            <p>Río de Janeiro</p>
+        </div>
+        <p>"Gracias a VUELA viajes y turismo por esta experiencia tan maravillosa que nos dio de conocer este maravilloso lugar."</p>
+      </article>
+
+      <!-- Referencia 2 -->
+      <article class="Referencias_clientes">
+        <div class="Referencias__media">
+          <img src="./images/carolina referencia.png" alt="Rosita">
+        </div>
+        <h3>CAROLINA Y SU ESPOSO</h3>
+        <div class="Referencias__location">
+            <p>Curazao</p>
+        </div>
+
+        <p>"Una experiencia inolvidable gracias a la agencia viajes y turismo por su organización y ayuda, un sueño hecho en realidad."</p>
+      </article>
+
+      <!-- Referencia 3 -->
+      <article class="Referencias_clientes">
+        <div class="Referencias__media">
+          <img src="./images/ivan referencia.png" alt="Rosita">
+        </div>
+        <h3>IVÁN Y SU FAMILIA</h3>
+        <div class="Referencias__location">
+            <p>Madrid</p>
+        </div>
+
+        <p>"Gracias por sus servicios como agencia de Viajes, confianza al 100% y diversión"</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- =================== CONTACTO =================== -->
+<section id="contacto" class="contact">
+  <div class="contact__container">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <div class="contact__info">
+      <h2>Contáctanos</h2>
+
+      <div class="contact__decor">
+        <span></span>
+        <strong>✈</strong>
+        <span></span>
+      </div>
+
+      <p class="contact__intro">
+        ¿Listo para tu próxima aventura? Nuestro equipo está aquí para ayudarte a planificar el viaje perfecto.
+      </p>
+
+      <div class="contact__cards">
+
+        <article class="infocard">
+          <div class="infocard__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path d="M6 3h3l2 5-2 1a12 12 0 0 0 6 6l1-2 5 2v3c0 1-1 2-2 2A16 16 0 0 1 4 5c0-1 1-2 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="infocard__body">
+            <h3>Teléfono</h3>
+            <p>+57 321 2302784 <span>|</span> +57 313 7468462</p>
+          </div>
+        </article>
+
+        <article class="infocard">
+          <div class="infocard__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path d="M3 6h18v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6Z" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M3 7l9 7 9-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="infocard__body">
+            <h3>Email</h3>
+            <p>Vuelaviajesyturismo@gmail.com</p>
+          </div>
+        </article>
+
+        <article class="infocard">
+          <div class="infocard__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="10" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="infocard__body">
+            <h3>Dirección</h3>
+            <p>Cra. 13 #16-47 Local 6<br>Armenia Quindío, Colombia</p>
+          </div>
+        </article>
+
+        <article class="infocard">
+          <div class="infocard__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M12 7v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="infocard__body">
+            <h3>Horarios</h3>
+            <p>Lun - Vie: 8:00 - 18:00 <span>|</span> Sáb: 8:00 - 12:00</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="contact__why">
+        <div class="contact__why-icon">🏅</div>
+
+        <div class="contact__why-content">
+          <h3>¿Por qué elegir Vuela?</h3>
+
+          <ul class="reasons__list">
+            <li>12 años de experiencia</li>
+            <li>Mejores precios garantizados</li>
+            <li>Atención personalizada</li>
+            <li>Seguro de viaje incluido</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMNA DERECHA -->
+    <div class="quote-form">
+      <form class="contactform" action="https://formspree.io/f/mqevrzjg" method="post">
+        <h2>Solicita tu Cotización</h2>
+
+        <div class="contact__decor contact__decor--center">
+          <span></span>
+          <strong>✈</strong>
+          <span></span>
+        </div>
+
+        <p class="contactform__hint">
+          Completa el formulario y te contactaremos en menos de 24 horas.
+        </p>
+
+        <div class="formgrid">
+          <div class="field">
+            <label for="c-nombre">Nombre completo</label>
+            <input id="c-nombre" name="nombre" type="text" placeholder="Nombre completo" required>
+          </div>
+
+          <div class="field">
+            <label for="c-telefono">Teléfono</label>
+            <input id="c-telefono" name="telefono" type="tel" placeholder="Teléfono">
+          </div>
+
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input id="c-email" name="email" type="email" placeholder="Email" required>
+          </div>
+
+          <div class="field">
+            <label for="c-destino">Destino de interés</label>
+            <input id="c-destino" name="destino" type="text" placeholder="Destino de interés">
+          </div>
+
+          <div class="field">
+            <label for="c-fecha">Fecha de viaje</label>
+            <input id="c-fecha" name="fecha" type="text" placeholder="Fecha de viaje">
+          </div>
+
+          <div class="field">
+            <label for="c-personas">Número de viajeros</label>
+            <input id="c-personas" name="personas" type="text" placeholder="Número de viajeros">
+          </div>
+
+          <div class="field grid-span">
+            <label for="c-presupuesto">Presupuesto aproximado</label>
+            <input id="c-presupuesto" name="presupuesto" type="text" placeholder="Presupuesto aproximado">
+          </div>
+
+          <div class="field grid-span">
+            <label for="c-mensaje">Mensaje adicional</label>
+            <textarea id="c-mensaje" name="mensaje" rows="5" placeholder="Mensaje adicional"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-send">
+          <span class="btn-send__icon" aria-hidden="true">✈</span>
+          Enviar Solicitud
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- FRANJA INFERIOR -->
+  <div class="contact__features">
+    <article class="feature-contact">
+      <div class="feature-contact__icon">🎧</div>
+      <div>
+        <h3>Atención 24/7</h3>
+        <p>Siempre disponibles para ti</p>
+      </div>
+    </article>
+
+    <article class="feature-contact">
+      <div class="feature-contact__icon">🛡</div>
+      <div>
+        <h3>Viaja Seguro</h3>
+        <p>Tu tranquilidad es nuestra prioridad</p>
+      </div>
+    </article>
+
+    <article class="feature-contact">
+      <div class="feature-contact__icon">🌐</div>
+      <div>
+        <h3>Experiencias Inolvidables</h3>
+        <p>Creamos recuerdos para toda la vida</p>
+      </div>
+    </article>
+  </div>
+</section>
+<!-- =================== FOOTER =================== -->
+<footer class="site-footer">
+  <div class="footer__inner">
+
+    <!--- COLUMNA LOGO/ MARCA -->
+    <div class="footer__brand">
+      <a href="#" class="footer__logo">
+        <img src="./images/images.png" alt="Logo Vuela" />    
+      </a>
+
+      <p>Tu compañero de confianza para explorar el mundo. Creamos experiencias de viaje inolvidables desde hace más de 10 años.</p>
+      
+    <div class="footer__social">
+      <a href="https://www.instagram.com/vuelaviajesyturismo?igsh=Zjhhbjk3cGlkajc3" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="https://www.facebook.com/share/1Dfi8oCQcP/" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+      <a href="https://wa.me/573212302784" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>      
+      
+    </div>
+
+
+    <!---- COLUMNA DE SERVICIOS-->
+    <div class="footer__col">
+      <h3>
+        <span class="footer__title-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+            <path d="M10 6V5a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="1.8"/>
+            <rect x="4" y="6" width="16" height="13" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M4 11h16"  stroke="currentColor" stroke-width="1.8"/>
+          </svg>
+        </span>
+        Servicios
+      </h3>
+     
+      <ul class="footer__links">
+        <li><a href="#servicios">Vuelos</a></li>
+        <li><a href="#servicios">Hoteles</a></li>
+        <li><a href="#servicios">Paquetes Turísticos</a></li>
+        <li><a href="#servicios">Tours Guiados</a></li>
+        <li><a href="#servicios">Renta de Autos</a></li>
+        <li><a href="#servicios">Cruceros</a></li>
+      </ul>
+    </div>
+
+
+    <!---- COLUMNA DESTINOS -->
+    <div class="footer__col">
+      <h3>
+        <span class="footer__title-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M3 12h18" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M12 3c2.4 2.6 3.6 5.6 3.6 9s-1.2 6.4-3.6 9c-2.4-2.6-3.6-5.6-3.6-9S9.6 5.6 12 3Z" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
+        </span>
+        Destinos Populares
+      </h3>
+      <ul>
+        <li><a href="#destinos">París, Francia</a></li>
+        <li><a href="#destinos">Tokio, Japón</a></li>
+        <li><a href="#destinos">Santorini, Grecia</a></li>
+        <li><a href="#destinos">Machu Picchu, Perú</a></li>
+        <li><a href="#destinos">Bali, Indonesia</a></li>
+        <li><a href="#destinos">Nueva York, EUA</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col footer__contact">
+      <h3>
+        <span class="footer__title-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+            <path d="M6 3h3l2 5-2 1a12 12 0 0 0 6 6l1-2 5 2v3c0 1-1 2-2 2A16 16 0 0 1 4 5c0-1 1-2 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        Contacto
+      </h3>
+
+ <ul class="footer__contact-list">
+        <li>
+          <span class="footer__contact-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path d="M6 3h3l2 5-2 1a12 12 0 0 0 6 6l1-2 5 2v3c0 1-1 2-2 2A16 16 0 0 1 4 5c0-1 1-2 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span>
+            +57 321 2302784<br>
+            +57 313 7468462
+          </span>
+        </li>
+
+        <li>
+          <span class="footer__contact-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path d="M3 6h18v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6Z" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M3 7l9 7 9-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>
+            Vuelaviajesyturismo@gmail.com
+          </span>
+        </li>
+
+        <li>
+          <span class="footer__contact-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="10" r="3" fill="currentColor"/>
+            </svg>
+          </span>
+          <span>
+            Cra. 13 #16-47 Local 6,<br>
+            Armenia Quindío, Colombia
+          </span>
+        </li>
+
+        <li>
+          <span class="footer__contact-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M12 7v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>
+            Lun - Vie: 8:00 - 18:00<br>
+            Sáb: 8:00 - 12:00
+          </span>
+        </li>
+      </ul>
+    </div>
+  
+
+  <div class="footer__bottom">
+    <div class="footer__copy">© 2024 Vuela Agencia de Viajes y Turismo. Todos los derechos reservados.</div>
+    <nav class="footer__legal">
+      <a href="#">Términos y Condiciones</a>
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Aviso Legal</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
